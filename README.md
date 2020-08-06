@@ -8,14 +8,19 @@ Templates available in this repository:
 
 ## Downloading the templates
 ```
-$ faas template pull https://github.com/grengojbo/openfaas-python3-fastapi-template
+mkdir <project-name>
+or
+git clone https://<gitrepo>/<project-name>
+
+cd <project-name>
+faas-cli template pull https://github.com/grengojbo/openfaas-python3-fastapi-template
 ```
 
 ## Using the python3-fastapi templates
 Create a new function
 
 ```
-$ faas new --lang python3-fastapi <fn-name>
+faas-cli new --lang python3-fastapi <fn-name>
 ```
 
 Build, push, and deploy
